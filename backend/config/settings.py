@@ -19,6 +19,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'https://kakeibofromtend.onrender.com',
+    'https://kakeibobackend.onrender.com',
 ]
 
 INSTALLED_APPS = [
