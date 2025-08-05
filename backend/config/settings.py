@@ -1,6 +1,10 @@
+import os
 from pathlib import Path
 from datetime import timedelta
 import dj_database_url
+
+from dotenv import load_dotenv
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,7 +85,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://user:password@db:5432/kakeibo',
+        default=os.environ.get("DATABASE_URL"),
         conn_max_age=600
     )
 }
