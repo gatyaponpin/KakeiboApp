@@ -6,7 +6,8 @@
 ## 配信サイト
 
 - Render.comで配信しています。
-- DBの情報は定期的にリセットされますので、サンプルとしてに使用してください。
+- DBの情報は定期的にリセットされますので、サンプルとして使用してください。
+- 「test@test.com / test」 でログインできます
 
 <https://kakeibofromtend.onrender.com>
 
