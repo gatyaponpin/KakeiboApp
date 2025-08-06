@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="justify-center">
      <v-card max-width="500" class="mx-auto">
       <v-card-actions>
         <v-col>
@@ -13,6 +13,7 @@
       </v-card-actions>
     </v-card>
   </v-container>
+  <v-btn class="mx-auto" type="submit" color="primary" @click="goRegister">新規登録する</v-btn>
 </template>
 
 <script setup lang="ts">
@@ -39,5 +40,9 @@ const handleLogin = async () => {
   } finally {
     loading.value = false
   }
+}
+
+const goRegister = () => {
+  router.push('/register')
 }
 </script>

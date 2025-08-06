@@ -37,11 +37,15 @@
       </v-alert>
     </v-card>
   </v-container>
+  <v-btn class="mx-auto" type="submit" color="primary" @click="goLogin">ログインへ</v-btn>
 </template>
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
+import { useRouter } from 'vue-router'
 import { registerUser } from '@/api/user'
+
+const router = useRouter()
 
 const form = reactive({
   email: '',
@@ -77,5 +81,9 @@ const submit = async () => {
   } finally {
     loading.value = false
   }
+}
+
+const goLogin = () => {
+  router.push('/login')
 }
 </script>
