@@ -1,6 +1,7 @@
 <template>
   <v-container class="justify-center">
      <v-card max-width="500" class="mx-auto">
+      <h1 class="display-1 ma-5">ログイン</h1>
       <v-card-actions>
         <v-col>
           <v-form @submit.prevent="handleLogin" class="mt-8" ref="form">

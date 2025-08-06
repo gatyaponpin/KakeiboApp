@@ -6,8 +6,10 @@
 ## 配信サイト
 
 - Render.comで配信しています。
+  - Render.comは継続的なアクセスが無い場合にシステムがダウンしてしまいます。
+  - バックエンドサーバーの立ち上がり（APIのレスポンス）に時間がかかる場合があります。
 - DBの情報は定期的にリセットされますので、サンプルとして使用してください。
-- 「test@test.com / test」 でログインできます
+- 「test@test.com / testtest」 でログインできます
 
 <https://kakeibofromtend.onrender.com>
 
