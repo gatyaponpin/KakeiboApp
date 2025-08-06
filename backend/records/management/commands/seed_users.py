@@ -10,4 +10,9 @@ class Command(BaseCommand):
             password='admin',
             username='管理者',
         )
+        User.objects.get_or_create(
+            email='test@test.com',
+            password='test',
+            username='test',
+        )
         self.stdout.write(self.style.SUCCESS('ユーザーを投入しました'))

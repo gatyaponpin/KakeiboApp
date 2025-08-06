@@ -6,7 +6,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         seeders = [
-            # 'seed_users',
+            'seed_users',
             'seed_categories',
             'seed_subscriptions',
             'seed_budgets',

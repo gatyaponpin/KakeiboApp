@@ -7,7 +7,7 @@ export const useUtilStore = defineStore('util', {
       timeout: 3000,
       color: 'success'
     },
-    email: 'user@example.com',
+    email: 'test@test.com',
   }),
   actions: {
     setSnack(payload: { msg: string | null; timeout?: number; color?: string }) {

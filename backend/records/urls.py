@@ -15,6 +15,7 @@ from .views.budget_summary_view import BudgetSummaryAPIView
 from records.views.kakeibo_summary_view import KakeiboSummaryView
 from records.views.kakeibo_list_view import KakeiboListView
 from .views.token_view import CustomTokenObtainPairView
+from .views.regist_user_view import UserRegisterView
 
 router = DefaultRouter()
 router.register('users', UserViewSet)
@@ -30,4 +31,5 @@ urlpatterns = [
     path('kakeibo-list/', KakeiboListView.as_view(), name='kakeibo-list'),
     path('token/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('register/', UserRegisterView.as_view(), name='register'),
 ]

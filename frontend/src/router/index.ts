@@ -3,6 +3,7 @@ import MainView from '@/views/MainView.vue'
 import Login from '@/views/Login.vue'
 import Home from '@/views/Home/HomePage.vue'
 import List from '@/views/List/ListPage.vue'
+import UserRegister from '@/views/UserRegister.vue'
 // import Saving from '@/pages/SavingPage.vue'
 // import Graph from '@/pages/GraphPage.vue'
 // import Calendar from '@/pages/CalendarPage.vue'
@@ -14,6 +15,11 @@ const routes: RouteRecordRaw[] = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+   {
+    path: '/register',
+    name: 'Register',
+    component: UserRegister,
   },
   {
     path: '/',
@@ -43,8 +49,8 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const isLoggedIn = !!localStorage.getItem('access_token')
 
-  // ログインページは常に許可
-  if (to.name === 'Login') {
+  // ログインページと新規登録ページは常に許可
+  if (to.name === 'Login' || to.name === 'Register') {
     return next()
   }
 

@@ -6,3 +6,4 @@ from .budget_serializer import BudgetSerializer
 from .subscription_serializer import SubscriptionSerializer
 from .kakeibo_summary_serializer import KakeiboSummarySerializer
 from .kakeibo_list_serializer import KakeiboListSerializer
+from .user_serializer import UserRegisterSerializer
