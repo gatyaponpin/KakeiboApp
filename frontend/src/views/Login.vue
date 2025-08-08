@@ -5,8 +5,8 @@
       <v-card-actions>
         <v-col>
           <v-form @submit.prevent="handleLogin" class="mt-8" ref="form">
-            <v-text-field v-model="email" label="メールアドレス" required />
-            <v-text-field v-model="password" label="パスワード" type="password" required />
+            <v-text-field autocomplete="email" v-model="email" label="メールアドレス" required />
+            <v-text-field autocomplete="password" v-model="password" label="パスワード" type="password" required />
             <v-btn type="submit" color="primary" :loading="loading">ログイン</v-btn>
             <v-alert v-if="errorMessage" type="error" class="mt-4">{{ errorMessage }}</v-alert>
           </v-form>
